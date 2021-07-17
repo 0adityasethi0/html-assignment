@@ -1,0 +1,80 @@
+<html>
+    <head> 
+        <title>Fun With Numbers</title>
+         <link rel="stylesheet" href="traditional.css" />
+         <script>
+             function toggleText(){
+                document.getElementById('form1').style.display = 'block';
+             }
+             function checkzs(name,day,month)
+             {  
+                // var d=document.getElementsByName('d').value;
+                // var m=document.getElementsByName('m').value;           
+                var zodiac =['', 'Capricorn', 'Aquarius', 'Pisces', 'Aries', 'Taurus', 'Gemini', 'Cancer', 'Leo', 'Virgo', 'Libra', 'Scorpio', 'Sagittarius', 'Capricorn'];
+                var last_day =['', 19, 18, 20, 20, 21, 21, 22, 22, 21, 22, 21, 20, 19];
+                var x = (day > last_day[month]) ? zodiac[month*1 + 1] : zodiac[month];
+
+                // alert(day+"/"+month+"sign"+x+name);
+                alert(name+" was born on "+day+"/"+month+" hence, Zodiac sign is: "+x)
+                return 0;
+            
+            }
+           
+
+             
+         </script>
+    </head>
+    <body>
+        <div class="header">
+          <h1><font size=7>Fun With Numbers</font></h1>
+        </div>
+<div class="topnav">
+ <a href="aditya sethi intro.html"  target="_blank">Home</a>
+ <a href="funwithstrings.html" target="_blank">Fun-with-Strings</a>
+ <a href="#contact">Contact me</a>
+</div>
+        <div class="sectionh2">
+            Rules for the Game are as follows:
+            <ul>
+                <li>Click on the "Check your Zodiac Sign" Button </li>
+                <li>Enter your name, day(1-31) and month(1-12) of Birthday</li>
+                <li>Click on "Submit" Button</li>
+            </ul>
+        </div>
+        <div class="sectionsub">
+            <img src="num2.jpg" width=300 height=200 align="left">
+          <img src="num3.gif" width=300 height=200 align="right">
+            <b><center><font size=6>LET'S BEGIN!!</font></center></b>
+            <br><br>
+        </div>
+        
+       <!-- <input type="submit" name="size" value="Check Your Zoidac Sign" >
+    <FORM name="form1" Method= " get " Action= " URL ">
+                NAME  : <input type="text" name="Fstring" size=80 maxlength=80 placeholder="Enter Name here"><br>
+                DAY   : <input type="text" name="Fstring" size=80 maxlength=80 placeholder="Enter Name here"><br>
+                MONTH : <input type="text" name="Fstring" size=80 maxlength=80 placeholder="Enter Name here"><br>
+                <input type="submit" name="size" value="Submit" >
+
+            </FORM>-->
+            <center><button onclick="toggleText()" value="Check your Zodiac Sign"><font size=5>Check your Zodiac Sign</font></button></center><br><br><br><br>
+            <div class="section">
+           <FORM name="form1" Method= " get " Action= " URL " id="form1" style="display: none;">
+                <center><pre><b>NAME   :</b> <input type="text" name="name" id="n" size=80 maxlength=80 placeholder="Enter Name here" required><br><br></pre></center>
+                <center> <pre> <b>DAY    :</b> <input type="text" name="day" id="d" size=80 maxlength=80 placeholder="Enter day here" required><br><br></pre></center>
+                <center> <pre><b>MONTH  :</b> <input type="text" name="month" id="m" size=80 maxlength=80 placeholder="Enter month here" required><br><br><br><br></pre></center>
+                <center><button onclick="checkzs(document.form1.name.value,document.form1.day.value,document.form1.month.value)">Check Zodiac Sign</button></center>              
+            </FORM>
+       </div>
+<div class="footer">
+            <br><br>
+            <b><i><a name="contact">Links to all my social media handles:</a></i></b><br><br><br>
+            
+                <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+                <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+                <a href="mailto:ashita1402@gmail.com" target="_blank">EmailID</a>
+            <br><br><br>
+        </div>
+
+    </body>
+</html>
