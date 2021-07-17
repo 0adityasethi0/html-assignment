@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title> Fun With Strings</title>
+        <link rel="stylesheet" href="traditional.css" />
+        <script type="text/javascript" language="javascript">
+           /* function showreverse()
+            {
+          var x=document.getElementById("s1").value;
+
+          var y=  x.split("").reverse().join("");
+        document.getElementById("s2").innerText=y;
+            }*/
+      function showreverse(x) {
+            var y=''; 
+            var len=x.length
+            for (i=0;i<len;i++)
+            {
+              y=y+x[len-i-1];
+            }
+        
+            document.getElementById('s2').value=y;
+        }
+      function checkequality(a,b)
+      {
+          if(a==b)
+          alert("The strings you entered match, hence EQUAL :)")
+          else 
+          alert("The strings you entered do not match, hence NOT EQUAL :(")
+              
+          }
+      
+                     
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1><font size=7>Fun With Strings</font></h1>
+        </div>
+        <div class="topnav">
+            <a href="aditya sethi intro.html"  target="_blank">Home</a>
+ <a href="funwithnumbers.html" target="_blank">Fun-with-Numbers</a>
+ <a href="#contact">Contact me</a>
+        </div>
+        <div class="sectionh2">
+            Rules for the Game are as follows:
+            <ul>
+                <li>The user has to enter text in the first text box labelled as " String 1"</li>
+                <li>There are 3 buttons namely:</li>
+                <ol>
+                    <li>Show reverse</li>
+                    <li>Check Equality</li>
+                    <li>Clear</li>
+                </ol>
+                <li>The user can make use of these buttons according to the task they want to perform.</li>
+            </ul>
+        </div>
+        <div class="sectionsub">
+            <img src="fws.jpg" width=300 height=200 align="left"><br><br><br><br><br>
+          <img src="pd.jpg" width=300 height=200 align="right"><br><br><br><br><br>
+            <b><center><font size=6>LET'S BEGIN!!</font></center></b>
+  
+<br>
+<br>
+        </div>
+        <div class="section">
+            <FORM name="form1" Method= " get " Action= " URL ">
+                String 1  : <input type="text" name="Fstring" size=80 maxlength=80 placeholder="Enter String here" id="s1"><br>
+                String 2  : <input type="text" name="Fstring" size=80 maxlength=80 placeholder="Enter String here" id="s2"><br><br>
+                <input type="button" name="sr" value="Show Reverse" onclick="showreverse(document.getElementById('s1').value);"></input>                
+                <input type="button" name="size" value="Check Equality" onclick="checkequality(document.getElementById('s1').value,document.getElementById('s2').value)"></input>
+                <input type="reset" name="size" value="Clear">
+
+            </FORM>
+        </div>
+        <div class="footer">
+            <br><br>
+            <b><i><a name="contact">Links to all my social media handles:</a></i></b><br><br><br>
+            
+                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                <a href="https://twitter.com/" target="_blank">Twitter</a>
+                <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+                <a href="mailto:sethiaditya10@gmail.com" target="_blank">EmailID</a>
+            <br><br><br>
+        </div>
+    </body>
+</html>
