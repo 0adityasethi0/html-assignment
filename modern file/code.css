@@ -1,0 +1,80 @@
+body{
+    font-family:sans-serif;
+    font-size:12pt;
+    border: 0pt;
+}
+.header{
+    text-align:center;
+    font-size:18pt;
+    margin-bottom:24pt;
+    
+}
+h1{
+    font-size: 18pt;
+    font:italic;
+    margin-bottom:0pt;
+    /*img?*/
+}
+.section{
+    font-size:16pt;
+    color:"#450084";
+    margin-bottom:12pt;
+    /*background-color: lightgray;*/
+    border-bottom: 2px "#cbb677"; 
+    padding: 50px;
+    margin: 20px
+}
+h2{
+    color: black;
+    font-size:16pt;
+    margin-top:0pt;
+
+}
+.sectionh2{
+    /*color:black;*/
+    font-size:12pt;
+    font:bold;
+    margin-bottom:6pt;
+    }
+.sectionsub{
+    font-size:14pt;
+    font-variant:small-caps;
+    color:black;
+    display: inline;
+}
+a:link{
+    color:violet;
+    text-decoration: none;
+    background-color:white;
+    padding: 14px 25px;
+    text-align: center;
+
+
+}
+a:hover{
+    color:white;
+    background-color:gold;
+    padding: 14px 25px;
+    text-align: center;
+    transition: 0.6s ease ;
+
+    }
+
+.footer{
+    /*text-align:center;*/
+    font-size:10pt;
+    font: Times New Roman;
+    left:0;
+}
+.topnav {
+ overflow: hidden; /*The overflow is clipped, and the rest of the content will be invisible*/
+ background-color: pink;
+}
+.topnav a {
+ float: left; /*The float property is used for positioning and formatting content or image */
+ color: pink;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+ font-size: 17px;
+}
