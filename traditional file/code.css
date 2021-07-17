@@ -1,0 +1,85 @@
+body{
+    font-family: serif;
+    font-size:12pt;
+    border: 0pt;
+}
+.header{
+    text-align:center;
+    font-size:18pt;
+    margin-bottom:24pt;
+    background-color: lightblue;
+    padding: 60px;
+    
+
+}
+h1{
+    font-size: 18pt;
+    font:italics;
+    margin-bottom:0pt;
+}
+.section{
+    font-size:20pt;
+    margin-bottom:6pt;
+    background-color: lightgray;
+    border-left: 10pt darkgray;
+    padding: 100px;
+    margin: 100px
+}
+h2{
+    color: #cbb677;
+    font-size:16pt;
+    margin-top:0pt;
+    
+   }
+.sectionh2{
+color:black;
+font-size:12pt;
+margin-bottom:6pt;
+}
+
+.sectionsub{
+    font-size:14pt;
+    color:black;
+}
+a:link{
+    color:"#450084";
+    text-decoration: none;
+    background-color:white;
+    padding: 14px 25px;
+    text-align: center;
+
+
+}
+a:hover{
+    color:white;
+    background-color:"#450084";
+    padding: 14px 25px;
+    text-align: center;
+    transition: 0.6s ease;
+
+    }
+
+.footer{
+    text-align:center;
+    font-size:10pt;
+    font: italic;
+}
+.topnav {
+ overflow: hidden; /*The overflow is clipped, and the rest of the content will be invisible*/
+ background-color: lightgreen;
+}
+.topnav a {
+ float: left; /*The float property is used for positioning and formatting content or image */
+ color: lightgreen;
+ background-color: lightyellow;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+ font-size: 17px;
+}
+
+.topnav hover{
+    background-color: rgba(0, 0, 0, 0.6);
+    border-left: 4px solid rgba(450, 0, 60, 0.8) ;
+}
+
